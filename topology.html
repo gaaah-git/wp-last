@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Side Menu 구현</title>
+  <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+  <header>
+    <button id="menu-button">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+    <h5>My Home Page</h5>
+  </header>
+
+  <nav id="side-menu" class="hidden">
+    <ul>
+      <li><a href="#">Menu 1</a></li>
+      <li><a href="#">Menu 2</a></li>
+      <li><a href="#">Menu 3</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>My Home Page</h1>
+    <p>Lorem ipsum dolor sit...</p>
+  </main>
+
+  <script>
+   
+    let hidden = true;
+    const menuButton = document.getElementById('menu-button');
+    const sideMenu = document.getElementById('side-menu');
+
+    menuButton.addEventListener('click', () => {
+      if (hidden) {
+        sideMenu.classList.remove('hidden');
+        hidden = false;
+      } else {
+        sideMenu.classList.add('hidden');
+        hidden = true;
+      }
+    });
+  </script>
+</body>
+</html>
