@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(196, 171, 140);
+        }
+        * {
+  margin: 0;
+  padding: 0;
+}
+
+.boox {
+  display: grid;
+  width: 1800px;
+  grid-template-columns: repeat(3, 500px);
+  grid-auto-rows: 500px;
+  grid-auto-flow: row dense;
+  margin-left: 300px;
+  margin-top: 200px;
+}
+
+img:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+    </style>
+
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body>
+    <header>
+        <button id="menu-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+        <h5>Algebra</h5>
+    </header>
+
+    <nav id="side-menu" class="hidden">
+        <ul>
+
+            <li><a href="./index.html">처음으로</a></li>
+            <li><a href="./algebra.html">Algebra</a></li>
+            <li><a href="./2019.html">2019족보</a></li>
+            <li><a href="./test.html">임용기출(ring + field)</a></li>
+
+
+        </ul>
+    </nav>
+    <script>
+
+        let hidden = true;
+        const menuButton = document.getElementById('menu-button');
+        const sideMenu = document.getElementById('side-menu');
+    
+        menuButton.addEventListener('click', () => {
+          if (hidden) {
+            sideMenu.classList.remove('hidden');
+            hidden = false;
+          } else {
+            sideMenu.classList.add('hidden');
+            hidden = true;
+          }
+        });
+      </script>
+    
+    
+        <div class="boox">
+            <img src="./image/61.jpg" alt="1st image" width="400">
+            <img src="./image/62.jpg" alt="1st image" width="400">
+            <img src="./image/63.jpg" alt="1st image" width="400">
+            <img src="./image/64.jpg" alt="1st image" width="400">
+            <img src="./image/65.jpg" alt="1st image" height="400">
+          
+         
+          
+        </div>
+      
+      
+    <body>
+
+    </body>
+
+</html>

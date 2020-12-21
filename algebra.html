@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <title>Algebra</title>
+  <style>
+    body {
+      background-color: rgb(179, 241, 177);
+    }
+
+    .flex-box {
+      margin-top: 30px;
+      margin-left: 200px;
+      padding-top: 50px;
+      ;
+      display: flex;
+      justify-content: space-around;
+      width: 1600px;
+      height: 250px;
+      background-color: gray;
+    }
+
+    .flex-item {
+
+      width: 300px;
+      height: 200px;
+      margin: 10px;
+      background-color: blue;
+    }
+
+    .text1 {
+      font-size: 2rem;
+    }
+  </style>
   <link rel="stylesheet" href="css/style1.css">
 </head>
+
 <body>
   <header>
     <button id="menu-button">
@@ -17,21 +48,23 @@
 
   <nav id="side-menu" class="hidden">
     <ul>
-      
-      <li><a href="./factor-group.html">factor-group</a></li>
-      <li><a href="./2019.html">2019족보</a></li>
-      <li><a href="./test-a.html">임용기출(ring + field)</a></li>
 
+      <li><a href="./index.html">처음으로</a></li>
+      <li><a href="./algebra.html">Algebra</a></li>
       
+      <li><a href="./2019.html">2019족보</a></li>
+      <li><a href="./test.html">임용기출(ring + field)</a></li>
+
+
     </ul>
   </nav>
   <main>
-    <h1>Group</h1>
-    <p>Lorem ipsum dolor sit...</p>
+    <h1>Abstrcct Algebra</h1>
+    <p>group, ring, field </p>
   </main>
 
   <script>
-   
+
     let hidden = true;
     const menuButton = document.getElementById('menu-button');
     const sideMenu = document.getElementById('side-menu');
@@ -47,28 +80,104 @@
     });
   </script>
 
-<div class="popup_btn">
-    <a href="#pop01">팝업</a>
-  </div>
-  
-  <div id="pop01" class="overlay">
-    <div class="popup">
-        <img src="./image/01.jpg" alt="1st image" height="500">
 
+
+  <div class="flex-box">
+    <div class="popup_btn flex-item text1">
+      <a href="#pop01">factor or quotient</a>
+    </div>
+
+
+    <div id="pop01" class="overlay">
+      <div class="popup">
+        <a href="#none" class="close">&times;</a>
+        <img src="./image/11.jpg" alt="1st image" height="500">
+        <img src="./image/12.jpg" alt="1st image" height="500">
+        <img src="./image/13.jpg" alt="1st image" height="500">
+        <img src="./image/14.jpg" alt="1st image" height="500">
+
+      </div>
+    </div>
+
+
+    <div class="popup_btn flex-item text1">
+      <a href="#pop02">field</a>
+    </div>
+    <div id="pop02" class="overlay">
+      <div class="popup">
+        <a href="#none" class="close">&times;</a>
+        <img src="./image/21.jpg" alt="1st image" height="500">
+        <img src="./image/22.jpg" alt="1st image" height="500">
+        <img src="./image/23.jpg" alt="1st image" height="500">
+        
+      </div>
+    </div>
+
+    <div class="popup_btn flex-item text1">
+      <a href="#pop03">ideal</a>
+    </div>
+
+    <div id="pop03" class="overlay">
+      <div class="popup">
+        <a href="#none" class="close">&times;</a>
+        <img src="./image/31.jpg" alt="1st image" height="500">
+       
+      </div>
     </div>
   </div>
 
-<div class="popup_btn">
-    <a href="#pop02">팝</a>
-  </div>
-  
-  <div id="pop02" class="overlay">
-    <div class="popup">
-      <a href="#none" class="close">&times;</a>
-      열려라 팝업!
+
+
+
+
+  <div class="flex-box">
+    <div class="popup_btn flex-item text1">
+      <a href="#pop04">properties of ideal</a>
     </div>
+
+
+    <div id="pop04" class="overlay">
+      <div class="popup">
+        <a href="#none" class="close">&times;</a>
+        <img src="./image/41.jpg" alt="1st image" height="500">
+        <img src="./image/44.jpg" alt="1st image" height="500">
+        <img src="./image/42.jpg" alt="1st image" height="500">
+        <img src="./image/43.jpg" alt="1st image" height="500">
+
+      </div>
+    </div>
+
+    <div class="popup_btn flex-item text1">
+      <a href="#pop05">UFD, PID, ED</a>
+    </div>
+
+    <div id="pop05" class="overlay">
+      <div class="popup">
+        <a href="#none" class="close">&times;</a>
+        <img src="./image/51.jpg" alt="1st image" height="500">
+      </div>
+    </div>
+
+    <div class="popup_btn flex-item text1">
+      <a href="#pop06">Galois</a>
+    </div>
+
+    <div id="pop06" class="overlay">
+      <div class="popup">
+        <a href="#none" class="close">&times;</a>
+        아직 안 배움
+      </div>
+    </div>
+    
+    
+
+    
   </div>
 
+ 
+
+  
 
 </body>
+
 </html>

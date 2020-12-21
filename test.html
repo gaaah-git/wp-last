@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(196, 171, 140);
+        }
+
+        .booox {
+            margin-left: 400px;
+            margin-top: 200px;
+            width: 600px;
+
+        }
+
+        .text1 {
+            font-size: 2rem;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+    <header>
+        <button id="menu-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+        <h5>Algebra</h5>
+    </header>
+
+    <nav id="side-menu" class="hidden">
+        <ul>
+
+            <li><a href="./index.html">처음으로</a></li>
+            <li><a href="./algebra.html">Algebra</a></li>
+            <li><a href="./2019.html">2019족보</a></li>
+            <li><a href="./test.html">임용기출(ring + field)</a></li>
+
+
+        </ul>
+    </nav>
+    <script>
+
+        let hidden = true;
+        const menuButton = document.getElementById('menu-button');
+        const sideMenu = document.getElementById('side-menu');
+
+        menuButton.addEventListener('click', () => {
+            if (hidden) {
+                sideMenu.classList.remove('hidden');
+                hidden = false;
+            } else {
+                sideMenu.classList.add('hidden');
+                hidden = true;
+            }
+        }); 
+    </script>
+
+    <div class="booox">
+        <img src="./image/71.png" alt="1st image" width="600">
+
+        <div class="popup_btn flex-item text1">
+            <a href="#pop01">20. A-10 Sol</a>
+        </div>
+
+        <div id="pop01" class="overlay">
+            <div class="popup">
+                <a href="#none" class="close">&times;</a>
+                <img src="./image/81.jpg" alt="1st image" height="500">
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+
+
+        <img src="./image/72.png" alt="1st image" width="600">
+        <div class="popup_btn flex-item text1">
+            <a href="#pop02">18. A-14 Sol</a>
+        </div>
+
+        <div id="pop02" class="overlay">
+            <div class="popup">
+                <a href="#none" class="close">&times;</a>
+                <img src="./image/82.jpg" alt="1st image" height="500">
+            </div>
+        </div>
+        
+        <br>
+        <br>
+
+        <img src="./image/73.png" alt="1st image" width="600">
+        <div class="popup_btn flex-item text1">
+            <a href="#pop03">19. A-2 Sol</a>
+        </div>
+
+        <div id="pop03" class="overlay">
+            <div class="popup">
+                <a href="#none" class="close">&times;</a>
+                <img src="./image/83.jpg" alt="1st image" height="500">
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <img src="./image/74.png" alt="1st image" width="600">
+        <div class="popup_btn flex-item text1">
+            <a href="#pop04">07  Sol</a>
+        </div>
+
+        <div id="pop04" class="overlay">
+            <div class="popup">
+                <a href="#none" class="close">&times;</a>
+                <img src="./image/84.jpg" alt="1st image" height="500">
+            </div>
+        </div>
+
+        <br>
+        <br>
+        
+        <img src="./image/75.png" alt="1st image" width="600">
+        <div class="popup_btn flex-item text1">
+            <a href="#pop05">17. A-3 Sol</a>
+        </div>
+
+        <div id="pop05" class="overlay">
+            <div class="popup">
+                <a href="#none" class="close">&times;</a>
+                <img src="./image/85.jpg" alt="1st image" height="500">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
