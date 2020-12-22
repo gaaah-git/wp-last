@@ -104,7 +104,7 @@
       </div>
     </div>
 ```
-### 버튼 누르면 사진으로 되어있는 을 볼 수 있음. css의 popout .close 는 창닫기표시 관련 내용
+### 버튼 누르면 사진으로 되어있는 을 볼 수 있음. css의 <popout .close> 는 창닫기표시 관련 내용
 
 ## 임용기출에서도 위 기능을 이용 문제를 제시, 버튼을 클릭하면 솔루션을 볼 수 있게 하였음
 
@@ -138,3 +138,51 @@
   </script>
 ```
 ### 정답인  을 입력하고 확인버튼을 누르면 <정답입니다.> 가 뜨고, 그 외 다른것을 입력하거나 그냥 정답확인 버튼을 누르면 <(체 X 체) 는 체가 아닙니다. 왜냐하면 (0,1) X (1,0) = (0,0) 이기 때문에 정역부터 안 되기 때문이죠.> 가 뜸
+
+## 키프레임
+```c
+.key{
+  width: 1600px;
+  height: 300px;
+  margin-left: 500px;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  position: relative;
+  overflow: hidden;
+  font-size: 5rem;
+}
+
+.key > * {
+  position: absolute;
+}
+
+.key > h1 {
+  top: 80px;
+  left: 50px;
+  color: white;
+  animation-name: banner-title;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+
+
+
+@keyframes banner-title {
+  from { left: -50%; }
+  to { left: 50px; }
+}
+
+```
+
+## 한 학기 수업 후 느낀점
+```c
+사범대생으로 컴퓨터와 관련된 강의를 이번에 처음 들어보았습니다.
+사실 뒤에 자바스크립트 부분부터는 잘 따라가지 못했지만 전반적으로 재미있게 들었습니다.
+특히나 자바스크립트 이전 부분까지는 저 같은 학생도 따라하기 매우 쉽고 재미도 있어서 과제가 아니더라도 평소에 이것저것 해보면서 친구들에게 편지를 만들어 보냈는데 다들 좋아했습니다. 
+또한 자바스크립트 부분부터는 잘 수행하지 못한 것이 아쉬워 방학 때 좀 더 공부를 해보고 싶습니다.
+최종적으로는 이번 학기에 배운 내용을 이용해 수업 자료를 만드는 것이 목표입니다. 
+한 학기동안 좋은 수업 감사합니다:)
+```
