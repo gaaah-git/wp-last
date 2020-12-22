@@ -54,9 +54,9 @@
     left: 0;
     bottom: 0;
     border-right: 1px solid burlywood;
-    background-color: rgb(241, 221, 155);
+    background-color: rgba(168, 70, 13, 0.877);
     width: 200px;
-    padding: 10px 20px;
+    padding: 20px 40px;
     box-shadow: 1px 0 2px rgba(0, 0, 0, 0.4);
     transition-duration: 500ms;
   }
@@ -75,7 +75,8 @@
   
   #side-menu > ul > li > a {
     text-decoration: none;
-    color: black;
+    color: white;
+    font-size: 1.5rem;
   }
   #side-menu > ul > li > a:hover {
     font-weight: bold;
@@ -87,7 +88,8 @@
   .popup_btn a {
     display: inline-block;
     padding: 20px;
-    background: darkred;
+    background: rgba(114, 13, 13, 0.8);
+    opacity: 1;
     color: #fff;
     border-radius: 5px 0 10px 0;
   }

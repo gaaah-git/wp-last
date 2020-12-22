@@ -2,87 +2,237 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            background-image: url('./image/01.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
+  <meta charset="UTF-8">
+  <title>Algebra</title>
+  <style>
+   body {
+      background-image: url('./image/302.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
 
-        }
+    }
 
-        .harry {
-            background-color: white;
-            padding: 40px 2em;
-            margin: 200px 200px;
-            width: 1400px;
-            height: 800px;
-            opacity: 0.7;
+    .flex-box {
+      margin-top: 50px;
+      margin-left: 440px;
+      padding-top: 10px;
+      ;
+      display: flex;
+      justify-content: space-around;
+      width: 1200px;
+      height: 120px;
+      
+      
+    }
 
-        }
+    .flex-item {
+
+      width: 400px;
+      height: 100px;
+      margin: 10px;
+      
+      
+    }
+
+    .text1 {
+      font-size: 2rem;
+    }
+    .key{
+  width: 1600px;
+  height: 300px;
+  margin-left: 500px;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  position: relative;
+  overflow: hidden;
+  font-size: 5rem;
+}
+
+.key > * {
+  position: absolute;
+}
+
+.key > h1 {
+  top: 80px;
+  left: 50px;
+  color: white;
+  animation-name: banner-title;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
 
 
 
-        .text {
-            font-size: 7rem;
-            text-align: center;
-        }
 
-        .text1 {
-            font-size: 4rem;
-            text-align: center;
-        }
+@keyframes banner-title {
+  from { left: -50%; }
+  to { left: 50px; }
+}
 
-        .menu-box {
-            display: flex;
-            justify-content: space-around;
-            height: 100px;
 
-        }
 
-        .menu-item {
-            width: 300px;
-            height: 100px;
-            padding: 5px 20px;
-            border: 2px solid black;
-        }
-    </style>
 
+
+  </style>
+  <link rel="stylesheet" href="css/style1.css">
 </head>
 
 <body>
-    <nav class="harry">
-        <div class="text">
-            Gaaaah Math Study
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="menu-box">
-            
+  <header>
+    <button id="menu-button">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+    <h5>Algebra</h5>
+  </header>
 
-            <div class="menu-item text1">
-                <a href="./Algebra.html">Algebra</a>
+  <nav id="side-menu" class="hidden">
+    <ul>
 
-            </div>
-
-            <div class="menu-item text1">
-                <a href="./memo.html">Memo</a>
-            </div>
-            
-            <div class="menu-item text1">
-                <a href="./memo2.html">memo2</a>
-
-            </div>
-
-        </div>
+      <li><a href="./index.html">처음으로</a></li>
+      <li><a href="./2019.html">2019족보</a></li>
+      <li><a href="./test.html">임용기출(ring + field)</a></li>
+      <li><a href="./memo.html">체 X 체 = 체? </a></li>
+      <li><a href="./memo2.html">여유한은 cpt?</a></li>
 
 
-    </nav>
+    </ul>
+  </nav>
+  <div class="key">
+    <h1>Abstract Algebra</h1>
+  </div>
 
+  <script>
+
+    let hidden = true;
+    const menuButton = document.getElementById('menu-button');
+    const sideMenu = document.getElementById('side-menu');
+
+    menuButton.addEventListener('click', () => {
+      if (hidden) {
+        sideMenu.classList.remove('hidden');
+        hidden = false;
+      } else {
+        sideMenu.classList.add('hidden');
+        hidden = true;
+      }
+    });
+  </script>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+  <div class="flex-box">
+    <div class="popup_btn flex-item text1">
+      <a href="#pop01">factor or quotient</a>
+    </div>
+
+
+    <div id="pop01" class="overlay">
+      <div class="popup">
+        <a href="#none" class="close">&times;</a>
+        <img src="./image/11.jpg" alt="1st image" height="400">
+        <img src="./image/12.jpg" alt="1st image" height="400">
+        <img src="./image/13.jpg" alt="1st image" height="400">
+        <img src="./image/14.jpg" alt="1st image" height="400">
+
+      </div>
+    </div>
+
+
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  
+    <div class="popup_btn flex-item text1">
+      <a href="#pop02">field</a>
+    </div>
+    <div id="pop02" class="overlay">
+      <div class="popup">
+        <a href="#none" class="close">&times;</a>
+        <img src="./image/21.jpg" alt="1st image" height="400">
+        <img src="./image/22.jpg" alt="1st image" height="400">
+        <img src="./image/23.jpg" alt="1st image" height="400">
+        
+      </div>
+    </div>
+
+    <div class="popup_btn flex-item text1">
+      <a href="#pop03">ideal</a>
+    </div>
+
+    <div id="pop03" class="overlay">
+      <div class="popup">
+        <a href="#none" class="close">&times;</a>
+        <img src="./image/31.jpg" alt="1st image" height="500">
+       
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="flex-box">
+    <div class="popup_btn flex-item text1">
+      <a href="#pop04">properties of ideal</a>
+    </div>
+
+
+    <div id="pop04" class="overlay">
+      <div class="popup">
+        <a href="#none" class="close">&times;</a>
+        <img src="./image/41.jpg" alt="1st image" height="400">
+        <img src="./image/44.jpg" alt="1st image" height="400">
+        <img src="./image/42.jpg" alt="1st image" height="400">
+        <img src="./image/43.jpg" alt="1st image" height="400">
+
+      </div>
+    </div>
+
+    &nbsp;  &nbsp;  &nbsp; 
+    <div class="popup_btn flex-item text1">
+      <a href="#pop05">UFD, PID, ED</a>
+    </div>
+
+    <div id="pop05" class="overlay">
+      <div class="popup">
+        <a href="#none" class="close">&times;</a>
+        <img src="./image/51.jpg" alt="1st image" height="500">
+      </div>
+    </div>
+
+    <div class="popup_btn flex-item text1">
+      <a href="#pop06">Galois</a>
+    </div>
+
+    <div id="pop06" class="overlay">
+      <div class="popup">
+        <a href="#none" class="close">&times;</a>
+        아직 안 배움
+      </div>
+    </div>
+    
+    
+
+    
+  </div>
+
+ 
+
+  
 
 </body>
 

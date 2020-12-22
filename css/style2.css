@@ -54,7 +54,7 @@
     left: 0;
     bottom: 0;
     border-right: 1px solid #ddd;
-    background-color: #eee;
+    background-color: rgba(190, 50, 50, 0.705);
     width: 200px;
     padding: 10px 20px;
     box-shadow: 1px 0 2px rgba(0, 0, 0, 0.4);
@@ -75,8 +75,10 @@
   
   #side-menu > ul > li > a {
     text-decoration: none;
-    color: #555;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
   }
+  
   #side-menu > ul > li > a:hover {
     font-weight: bold;
     color: #222;
