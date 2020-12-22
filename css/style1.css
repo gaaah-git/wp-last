@@ -53,8 +53,8 @@
     top: 60px; 
     left: 0;
     bottom: 0;
-    border-right: 1px solid #ddd;
-    background-color: #eee;
+    border-right: 1px solid burlywood;
+    background-color: rgb(241, 221, 155);
     width: 200px;
     padding: 10px 20px;
     box-shadow: 1px 0 2px rgba(0, 0, 0, 0.4);
@@ -75,7 +75,7 @@
   
   #side-menu > ul > li > a {
     text-decoration: none;
-    color: #555;
+    color: black;
   }
   #side-menu > ul > li > a:hover {
     font-weight: bold;
@@ -89,6 +89,7 @@
     padding: 20px;
     background: darkred;
     color: #fff;
+    border-radius: 5px 0 10px 0;
   }
   
   .overlay {

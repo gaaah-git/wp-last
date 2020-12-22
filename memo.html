@@ -1,41 +1,72 @@
 <!doctype html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <title>간단한 문제 풀기</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>간단한 문제 풀기</title>
+  <style>
+    body {
+      background-image: url('./image/105.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    .box {
+      width: 800px;
+      height: 500px;
+      margin-top: 60px;
+      margin-left: 900px;
+      padding-top: 40px;
+      padding-left: 70px;
+      font-size: 3.3rem;
+      background-color: rgb(247, 206, 213);
+      opacity: 0.7;
+      border-radius: 3px 0 3px 0; 
     
+    }
+  </style>
+</head>
+
+<body>
 
 
 
-<h3> 체 X 체 = 체? (y/n)</h3>
+  <div class="box">
+
+
+    <h3> 체 X 체 = 체? (y/n)</h3>
     <form id="sign-up1">
-        <label for="user-ide">정답입력</label><br>
-        <input type="text" name="userIde" id="user-ide"><br>
-        <br>
+      <label for="user-ide">정답입력</label>
+      <br>
+      <input type="text" name="userIde" id="user-ide"><br>
 
-        <input type="submit" value="정답확인">
+
+      <input type="submit" value="정답확인">
     </form>
+  </div>
+
+  
 
 
-    <script>
-        const form = document.querySelector('#sign-up1');
-        form.onsubmit = function () {
-            const userIde = document.querySelector('#user-ide').value;
-            
+  <div class="box1"></div>
 
-            if (userIde == 'y') {
-                alert('정답입니다.');
-                return false;
-            } else {
-                alert('(체 X 체) 는 체가 아닙니다. 왜냐하면 (0,1) X (1,0) = (0,0) 이기 때문에 정역부터 안 되기 때문이죠.');
-            }
-        };
-    </script>
+  <script>
+    const form = document.querySelector('#sign-up1');
+    form.onsubmit = function () {
+      const userIde = document.querySelector('#user-ide').value;
 
 
-  </body>
+      if (userIde == 'y') {
+        alert('정답입니다.');
+        return false;
+      } else {
+        alert('(체 X 체) 는 체가 아닙니다. 왜냐하면 (0,1) X (1,0) = (0,0) 이기 때문에 정역부터 안 되기 때문이죠.');
+      }
+    };
+  </script>
+
+
+</body>
+
 </html>
-
-
