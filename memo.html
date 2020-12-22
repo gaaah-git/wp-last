@@ -5,13 +5,37 @@
     <title>간단한 문제 풀기</title>
   </head>
   <body>
+    
+
+
+
+<h3> 체 X 체 = 체? (y/n)</h3>
+    <form id="sign-up1">
+        <label for="user-ide">정답입력</label><br>
+        <input type="text" name="userIde" id="user-ide"><br>
+        <br>
+
+        <input type="submit" value="정답확인">
+    </form>
+
+
     <script>
-      var jbNum = prompt( '체 X 체 = 체? (y/n)', '' );
-      if ( jbNum == 'n' ) {
-        document.write ( '<p>정답입니다.</p>' );
-      } else  {
-        document.write ('(체 X 체) 는 체가 아닙니다. 왜냐하면 (0,1) X (1,0) = (0,0) 이기 때문에 정역부터 안 되기 때문이죠.</p>');
-      } 
+        const form = document.querySelector('#sign-up1');
+        form.onsubmit = function () {
+            const userIde = document.querySelector('#user-ide').value;
+            
+
+            if (userIde == 'y') {
+                alert('정답입니다.');
+                return false;
+            } else {
+                alert('(체 X 체) 는 체가 아닙니다. 왜냐하면 (0,1) X (1,0) = (0,0) 이기 때문에 정역부터 안 되기 때문이죠.');
+            }
+        };
     </script>
+
+
   </body>
 </html>
+
+
